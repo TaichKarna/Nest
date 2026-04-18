@@ -33,6 +33,11 @@ variable "example" {
   type        = string
 }
 
+variable "example2" {
+  description = "test variable"
+  type        = string
+}
+
 variable "enable_nat_gateway" {
   description = "Whether to enable a NAT Gateway."
   type        = bool
