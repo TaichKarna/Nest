@@ -1,4 +1,4 @@
-formatter: markdown table
+formatter: md doc
 
 recursive:
   enabled: false
@@ -23,13 +23,13 @@ sort:
   by: name
 
 settings:
-  anchor: false
+  anchor: true
   color: true
   default: true
   description: false
   escape: true
   hide-empty: true
-  html: false
+  html: true
   indent: 2
   lockfile: true
   read-comments: true
