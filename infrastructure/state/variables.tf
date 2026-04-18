@@ -5,7 +5,7 @@ variable "abort_incomplete_multipart_upload_days" {
 }
 
 variable "aws_region" {
-  description = "The AWS region to deploy resources in."
+  description = "The AWS region to test deploy resources in."
   type        = string
   default     = "us-east-2"
 }

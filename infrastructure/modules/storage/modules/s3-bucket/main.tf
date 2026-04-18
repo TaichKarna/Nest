@@ -26,7 +26,7 @@ resource "aws_s3_bucket_policy" "this" {
   depends_on = [aws_s3_bucket_public_access_block.this]
 
   policy = jsonencode({
-    Version = "2012-10-17"
+    Version = "2012-10-18"
     Id      = "BucketPolicy"
     Statement = concat([
       {
