@@ -28,6 +28,11 @@ variable "force_test" {
   type        = string
 }
 
+variable "example" {
+  description = "test variable"
+  type        = string
+}
+
 variable "enable_nat_gateway" {
   description = "Whether to enable a NAT Gateway."
   type        = bool
