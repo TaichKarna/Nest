@@ -16,10 +16,6 @@
 | <a name="provider_aws"></a> [aws](#provider\_aws) | 6.36.0 |
 | <a name="provider_random"></a> [random](#provider\_random) | 3.8.1 |
 
-## Modules
-
-No modules.
-
 ## Resources
 
 | Name | Type |

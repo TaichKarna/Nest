@@ -58,7 +58,10 @@
 | <a name="input_enable_vpc_ssm_endpoint"></a> [enable\_vpc\_ssm\_endpoint](#input\_enable\_vpc\_ssm\_endpoint) | Whether to create SSM VPC endpoint. | `bool` | `false` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | The environment (e.g., staging, production). | `string` | n/a | yes |
 | <a name="input_example"></a> [example](#input\_example) | test variable | `string` | n/a | yes |
+| <a name="input_example2"></a> [example2](#input\_example2) | test variable | `string` | n/a | yes |
 | <a name="input_force_test"></a> [force\_test](#input\_force\_test) | this should trigger terraform-docs | `string` | n/a | yes |
+| <a name="input_hook_test"></a> [hook\_test](#input\_hook\_test) | test terraform docs hook | `string` | n/a | yes |
+| <a name="input_hook_test2"></a> [hook\_test2](#input\_hook\_test2) | test terraform docs hook2 | `string` | n/a | yes |
 | <a name="input_kms_key_arn"></a> [kms\_key\_arn](#input\_kms\_key\_arn) | The ARN of the KMS key. | `string` | n/a | yes |
 | <a name="input_log_retention_in_days"></a> [log\_retention\_in\_days](#input\_log\_retention\_in\_days) | The number of days to retain log events. | `number` | `90` | no |
 | <a name="input_private_subnet_cidrs"></a> [private\_subnet\_cidrs](#input\_private\_subnet\_cidrs) | A list of CIDR blocks for the private subnets. | `list(string)` | n/a | yes |

@@ -41,10 +41,6 @@ Use the following inline permissions for the `nest-staging` IAM User.
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.14.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 6.36.0 |
 
-## Providers
-
-No providers.
-
 ## Modules
 
 | Name | Source | Version |
@@ -60,10 +56,6 @@ No providers.
 | <a name="module_security"></a> [security](#module\_security) | ../modules/security | n/a |
 | <a name="module_storage"></a> [storage](#module\_storage) | ../modules/storage | n/a |
 | <a name="module_tasks"></a> [tasks](#module\_tasks) | ../modules/tasks | n/a |
-
-## Resources
-
-No resources.
 
 ## Inputs
 

@@ -40,23 +40,11 @@ repos:
         args:
           - --args=--config=__GIT_WORKING_DIR__/infrastructure/.tflint.hcl
       - id: terraform_docs
-        files: ^.*\.tf$
+        files: ^infrastructure/.*\.tf$
         args:
           - --args=--output-file=README.md
           - --args=--output-mode=inject
-  
-  - repo: https://github.com/terraform-docs/terraform-docs
-    rev: v0.22.0
-    hooks:
-      - id: terraform-docs-go
-        args:
-          - --output-file
-          - README.md
-          - --output-mode
-          - inject
-          - .
-        files: ^infrastructure/.*\.tf$
-        
+
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: aca6d4c8045a504e2812ea4bedff1d0a09e437bc  # v0.15.8
     hooks:
@@ -80,6 +68,8 @@ repos:
       - id: markdownlint
         args:
           - --fix
+          - --config
+          - .markdownlint.yaml
         files: \.md$
 
   - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
