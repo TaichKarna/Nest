@@ -8,7 +8,7 @@ variable "availability_zones" {
   type        = list(string)
 }
 
-variable "common_ta" {
+variable "common_tags" {
   description = "A map of common tags to apply to all resources."
   type        = map(string)
   default     = {}
