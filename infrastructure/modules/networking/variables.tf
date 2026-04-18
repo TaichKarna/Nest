@@ -14,6 +14,10 @@ variable "common_tags" {
   default     = {}
 }
 
+variable "test_var" {
+  description = "test change"
+}
+
 variable "enable_nat_gateway" {
   description = "Whether to enable a NAT Gateway."
   type        = bool
