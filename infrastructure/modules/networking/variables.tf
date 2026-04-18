@@ -38,6 +38,11 @@ variable "example2" {
   type        = string
 }
 
+variable "hook_test" {
+  description = "test terraform docs hook"
+  type        = string
+}
+
 variable "enable_nat_gateway" {
   description = "Whether to enable a NAT Gateway."
   type        = bool
