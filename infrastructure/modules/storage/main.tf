@@ -29,7 +29,7 @@ module "fixtures_bucket" {
 
 resource "aws_iam_policy" "fixtures_read_only" {
   name        = "${var.project_name}-${var.environment}-fixtures-read-only"
-  description = "Allows read-only test to see if this works or not access to the fixtures S3 bucket"
+  description = "Allows read-only  access to the fixtures S3 bucket"
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
