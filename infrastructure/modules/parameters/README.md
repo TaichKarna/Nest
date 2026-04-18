@@ -78,8 +78,8 @@ No modules.
 | <a name="input_django_settings_module"></a> [django\_settings\_module](#input\_django\_settings\_module) | The location of the Django settings module to use (e.g., settings.staging, settings.production). | `string` | n/a | yes |
 | <a name="input_enable_additional_parameters"></a> [enable\_additional\_parameters](#input\_enable\_additional\_parameters) | Whether to create additional parameters (e.g. for production). | `bool` | `false` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | The environment (e.g., staging, production). | `string` | n/a | yes |
-| <a name="input_next_server_csrf_url"></a> [next\_server\_csrf\_url](#input\_next\_server\_csrf\_url) | The server-side CSRF URL for Next.js SSR (e.g., https://nest.owasp.dev/csrf/). | `string` | n/a | yes |
-| <a name="input_next_server_graphql_url"></a> [next\_server\_graphql\_url](#input\_next\_server\_graphql\_url) | The server-side GraphQL URL for Next.js SSR (e.g., https://nest.owasp.dev/graphql/). | `string` | n/a | yes |
+| <a name="input_next_server_csrf_url"></a> [next\_server\_csrf\_url](#input\_next\_server\_csrf\_url) | The server-side CSRF URL for Next.js SSR (e.g., <https://nest.owasp.dev/csrf/>). | `string` | n/a | yes |
+| <a name="input_next_server_graphql_url"></a> [next\_server\_graphql\_url](#input\_next\_server\_graphql\_url) | The server-side GraphQL URL for Next.js SSR (e.g., <https://nest.owasp.dev/graphql/>). | `string` | n/a | yes |
 | <a name="input_nextauth_url"></a> [nextauth\_url](#input\_nextauth\_url) | The NextAuth base URL (frontend URL with protocol). | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | The name of the project. | `string` | n/a | yes |
 | <a name="input_redis_password_arn"></a> [redis\_password\_arn](#input\_redis\_password\_arn) | The SSM Parameter ARN of password of the Redis cache. | `string` | n/a | yes |
