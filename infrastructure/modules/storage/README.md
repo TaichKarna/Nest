@@ -39,7 +39,6 @@
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | A map of common tags to apply to all resources. | `map(string)` | `{}` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | The environment (e.g., staging, production). | `string` | n/a | yes |
 | <a name="input_fixtures_bucket_name"></a> [fixtures\_bucket\_name](#input\_fixtures\_bucket\_name) | The name of the S3 bucket for fixtures. | `string` | n/a | yes |
-| <a name="input_force_trigger_xyz"></a> [force\_trigger\_xyz](#input\_force\_trigger\_xyz) | force docs update | `string` | n/a | yes |
 | <a name="input_kms_key_arn"></a> [kms\_key\_arn](#input\_kms\_key\_arn) | The ARN of the KMS key (used for fixtures bucket encryption). | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | The name of the project. | `string` | n/a | yes |
 
