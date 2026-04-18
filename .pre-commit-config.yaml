@@ -39,11 +39,19 @@ repos:
         files: ^infrastructure/.*\.tf$
         args:
           - --args=--config=__GIT_WORKING_DIR__/infrastructure/.tflint.hcl
-      - id: terraform_docs
+
+  - repo: local
+    hooks:
+      - id: terraform-docs
+        name: terraform-docs
+        language: docker_image
+        entry: quay.io/terraform-docs/terraform-docs:latest
         files: ^infrastructure/.*\.tf$
         args:
-          - --args=--output-file=README.md
-          - --args=--output-mode=inject
+          - --output-file=README.md
+          - --output-mode=inject
+          - infrastructure/
+        pass_filenames: false
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: aca6d4c8045a504e2812ea4bedff1d0a09e437bc  # v0.15.8
