@@ -9,38 +9,9 @@ variable "availability_zones" {
 }
 
 variable "common_tags" {
-  description = "A map of common tags to apply to all resources."
+  description = "A map of common tags to apply to all resources. making changes to test"
   type        = map(string)
   default     = {}
-}
-
-variable "test_var" {
-  description = "test change"
-}
-
-variable "demo_var" {
-  description = "testing terraform docs trigger"
-  type        = string
-}
-
-variable "force_test" {
-  description = "this should trigger terraform-docs"
-  type        = string
-}
-
-variable "example" {
-  description = "test variable"
-  type        = string
-}
-
-variable "example2" {
-  description = "test variable"
-  type        = string
-}
-
-variable "hook_test" {
-  description = "test terraform docs hook"
-  type        = string
 }
 
 variable "enable_nat_gateway" {
