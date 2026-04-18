@@ -37,14 +37,14 @@ Use the following inline permissions for the `nest-staging` IAM User.
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.14.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 6.36.0 |
 
 ## Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_alb"></a> [alb](#module\_alb) | ../modules/alb | n/a |
 | <a name="module_backend"></a> [backend](#module\_backend) | ../modules/service | n/a |
 | <a name="module_cache"></a> [cache](#module\_cache) | ../modules/cache | n/a |
@@ -60,7 +60,7 @@ Use the following inline permissions for the `nest-staging` IAM User.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_availability_zones"></a> [availability\_zones](#input\_availability\_zones) | A list of availability zones for the VPC. | `list(string)` | <pre>[<br/>  "us-east-2a",<br/>  "us-east-2b",<br/>  "us-east-2c"<br/>]</pre> | no |
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | The AWS region to deploy resources in. | `string` | `"us-east-2"` | no |
 | <a name="input_backend_desired_count"></a> [backend\_desired\_count](#input\_backend\_desired\_count) | The desired number of backend tasks. | `number` | `1` | no |
@@ -117,7 +117,7 @@ Use the following inline permissions for the `nest-staging` IAM User.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_acm_certificate_domain_validation_options"></a> [acm\_certificate\_domain\_validation\_options](#output\_acm\_certificate\_domain\_validation\_options) | The DNS validation options for ACM certificate. |
 | <a name="output_acm_certificate_status"></a> [acm\_certificate\_status](#output\_acm\_certificate\_status) | The status of the ACM certificate. |
 | <a name="output_alb_dns_name"></a> [alb\_dns\_name](#output\_alb\_dns\_name) | The DNS name of the ALB. |
