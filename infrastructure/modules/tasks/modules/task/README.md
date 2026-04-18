@@ -14,6 +14,10 @@
 | ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | 6.36.0 |
 
+## Modules
+
+No modules.
+
 ## Resources
 
 | Name | Type |
@@ -48,4 +52,8 @@
 | <a name="input_task_name"></a> [task\_name](#input\_task\_name) | The unique name of the task. | `string` | n/a | yes |
 | <a name="input_task_role_arn"></a> [task\_role\_arn](#input\_task\_role\_arn) | The ARN of the IAM role for the task. | `string` | `null` | no |
 | <a name="input_use_fargate_spot"></a> [use\_fargate\_spot](#input\_use\_fargate\_spot) | Whether to use Fargate Spot capacity provider. | `bool` | `false` | no |
+
+## Outputs
+
+No outputs.
 <!-- END_TF_DOCS -->

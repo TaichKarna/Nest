@@ -91,6 +91,10 @@ Use the following inline permissions for the `nest-bootstrap` IAM User
 | ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | 6.36.0 |
 
+## Modules
+
+No modules.
+
 ## Resources
 
 | Name | Type |
