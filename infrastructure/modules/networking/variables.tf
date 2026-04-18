@@ -18,6 +18,11 @@ variable "test_var" {
   description = "test change"
 }
 
+variable "demo_var" {
+  description = "testing terraform docs trigger"
+  type        = string
+}
+
 variable "enable_nat_gateway" {
   description = "Whether to enable a NAT Gateway."
   type        = bool
