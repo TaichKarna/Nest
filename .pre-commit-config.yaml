@@ -40,7 +40,7 @@ repos:
         args:
           - --args=--config=__GIT_WORKING_DIR__/infrastructure/.tflint.hcl
       - id: terraform_docs
-        files: ^infrastructure/.*\.tf$
+        files: ^.*\.tf$
         args:
           - --args=--output-file=README.md
           - --args=--output-mode=inject
