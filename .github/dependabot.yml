@@ -89,3 +89,17 @@ updates:
     schedule:
       interval: daily
     target-branch: main
+
+  - package-ecosystem: gomod
+    cooldown:
+      default-days: 21
+    directories:
+      - infrastructure
+    groups:
+      version-updates:
+        applies-to: version-updates
+        patterns:
+          - '*'
+    schedule:
+      interval: daily
+    target-branch: main
