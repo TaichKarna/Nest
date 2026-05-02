@@ -52,7 +52,6 @@ No modules.
 | <a name="input_public_subnet_ids"></a> [public\_subnet\_ids](#input\_public\_subnet\_ids) | A list of public subnet IDs. | `list(string)` | n/a | yes |
 | <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | The CIDR block for the VPC. | `string` | n/a | yes |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | The ID of the VPC. | `string` | n/a | yes |
-| <a name="input_vpc_id_2"></a> [vpc\_id\_2](#input\_vpc\_id\_2) | The ID of the VPC. | `string` | n/a | yes |
 
 ## Outputs
 

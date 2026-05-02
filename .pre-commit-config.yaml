@@ -37,14 +37,6 @@ repos:
         files: ^infrastructure/.*\.tf$
         args:
           - --config=infrastructure/.terraform-docs.yaml
-          - --output-file=README.md
-          - --output-mode=inject
-          - --recursive
-          - --recursive-path=.
-          - --recursive-include-main=false
-          - --recursive-exclude=.terraform
-          - --recursive-exclude=.terragrunt-cache
-          - --recursive-exclude=tests
           - infrastructure/
 
   - repo: https://github.com/antonbabenko/pre-commit-terraform
