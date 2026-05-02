@@ -1,7 +1,13 @@
 formatter: markdown table
 
 recursive:
-  enabled: false
+  enabled: true
+  path: .
+  include-main: false
+  exclude:
+    - .terraform
+    - .terragrunt-cache
+    - tests
 
 sections:
   hide: []

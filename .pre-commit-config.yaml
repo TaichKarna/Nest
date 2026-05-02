@@ -31,15 +31,21 @@ repos:
         exclude: pnpm-lock.yaml
 
   - repo: https://github.com/terraform-docs/terraform-docs
-    rev: v0.22.0
+    rev: be1a79478b65f008aeb42f497ba9a862bcd8dbc9
     hooks:
       - id: terraform-docs-go
-        files: ^infrastructure/(live|state|bootstrap|modules)/.*\.tf$
+        files: ^infrastructure/.*\.tf$
         args:
           - --config=infrastructure/.terraform-docs.yaml
           - --output-file=README.md
           - --output-mode=inject
           - --recursive
+          - --recursive-path=.
+          - --recursive-include-main=false
+          - --recursive-exclude=.terraform
+          - --recursive-exclude=.terragrunt-cache
+          - --recursive-exclude=tests
+          - infrastructure/
 
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: d0e12caebb2ab0ee8bf98181c8bfe9702bca103d  # v1.105.0
